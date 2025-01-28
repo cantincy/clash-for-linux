@@ -1,5 +1,3 @@
-[TOC]
-
 # 项目介绍
 
 此项目是通过使用开源项目[clash](https://github.com/Dreamacro/clash)作为核心程序，再结合脚本实现简单的代理功能。
@@ -33,7 +31,7 @@
 $ git clone https://github.com/wanhebin/clash-for-linux.git
 ```
 
-进入到项目目录，编辑`.env`文件，修改变量`CLASH_URL`的值。
+进入到项目目录，编辑`.env`文件，修改变量`CLASH_URL`的值为你的订阅地址。
 
 ```bash
 $ cd clash-for-linux
@@ -41,6 +39,11 @@ $ vim .env
 ```
 
 > **注意：** `.env` 文件中的变量 `CLASH_SECRET` 为自定义 Clash Secret，值为空时，脚本将自动生成随机字符串。
+
+<br>
+
+## 开启网络代理
+![本地路径](./img/network_proxy.png "相对路径演示")
 
 <br>
 
@@ -102,7 +105,7 @@ http_proxy=http://127.0.0.1:7890
 https_proxy=http://127.0.0.1:7890
 ```
 
-以上步鄹如果正常，说明服务clash程序启动成功，现在就可以体验高速下载github资源了。
+以上步骤如果正常，说明服务clash程序启动成功，现在就可以体验高速下载github资源了。
 
 <br>
 
@@ -129,7 +132,6 @@ $ cd clash-for-linux
 $ sudo bash shutdown.sh
 
 服务关闭成功，请执行以下命令关闭系统代理：proxy_off
-
 ```
 
 ```bash
